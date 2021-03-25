@@ -103,6 +103,15 @@ The second portion of the project is denominated VacationPy. For this portion I 
 
 #### VacationPy
 
+![HeatMap](WeatherPy/Heatmap.png)
+
+Here is an image of the heatmap I created before putting the hotels on it. 
+
+![HeatMap](WeatherPy/Heatmap_with_hotels1.png)
+
+Here is an image of the heatmap I created with the hotels. The image size is small but you can get a sense of the final product. 
+
+
 ## References
 
 
