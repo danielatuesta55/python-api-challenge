@@ -110,7 +110,7 @@ The second portion of the project is denominated VacationPy. For this portion I 
 Frost, J. (2018, April 3). Interpreting Correlation Coefficients. Retrieved from Statistics By Jim :
 https://statisticsbyjim.com/basics/correlations/#:~:text=As%20one%20value%20increases%2 %20there,0.6%3A%20A%20moderate%20negative%20relationship.
 
-Littel, T. (2021, March 24). Tutoring sesion March 24th 2021. (J. D. Atuesta, Interviewer)
+Littel, T. (2021, March 24). Tutoring session March 24th 2021. (J. D. Atuesta, Interviewer)
 
 Mr.T. (2018, June 5). Matplotlib - Border around scatter plot points. Retrieved from Stack Overflow: https://stackoverflow.com/questions/50706901/matplotlib-border-around-scatter plot-points
 
