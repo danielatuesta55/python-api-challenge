@@ -29,7 +29,6 @@ I hope you find my work not only to be complete but to display all the knowledge
 
 3. **README.md**: it's the current file you are reading. I strongly suggest navigating through it and look at the project's objective solution and analysis.
 
-
 I hope you find my work not only to be complete but to display all the knowledge learned throughout this portion of the Data Science Bootcamp at Northwestern University.
 
 ---
@@ -72,52 +71,158 @@ The second portion of the project is denominated VacationPy. For this portion I 
 
 ![TemperatureVSLatitude](WeatherPy/output_data/Latitude_vs_MaxTemp.png)
 
+
+Latitude vs. Temperature Plot
+
+Explanation of the code used for this section:
+
+* Once the Data Frame is clean from potential outliers, duplicated values etc. I could finally plot my data using matplotlib and specifically the function plt. To plot a scattergraph I used .plt.scatter ad then fed the parameters. This parameters where the Latitud values on the x axis and then the Maximum Temperature on the Y-axis. Then I created the labels for the figure.
+
+Figure Analysis
+
+* The scatter plot represents the maximum temperature (F) acording to the Latitude for each city.
+* As shown in the figure, as the latitude of the city is closer to 0 the temperature increases. This proves that if the city is located closer to the ecuator the temperature is higher.
+* We can also notice that is the city moves south of the ecuator the temperature decreases.
+* It is important to note that depending on the season (time of year) when the data is taken the data can fluctuate.
+
+
 **Humidity (%) vs. Latitude**
 
 ![TemperatureVSHumidity](WeatherPy/output_data/Latitude_vs_Humidity.png)
 
+Latitude vs. Humidity Plot
+
+Explanation of the code used for this section:
+
+* Using  a clean data frame I proceeded to search if the cities latitude affected the humidity percentage. The code only took the parameteres of latitude and humidity to be able to plot a scatter graph shown below.
+
+Figure Analysis
+
+* The scatter plot represents the Humidity (%) acording to the Latitude for each city.
+* As shown in the figure, as the latitude of the city moves (north) of the equator the higher humidity %
+* If the latitude goes south of the equator the humidity (%) tends to decrease. The further a city is from the equator the less humid.
+
+
 **Cloudiness (%) vs. Latitude**
 
-
 ![TemperatureVSCloudiness](WeatherPy/output_data/Latitude_vs_Cloudiness.png)
+
+
+Latitude vs. Cloudiness Plot
+
+Explanation of the code used for this section:
+
+* Once the Data Frame is clean from potential outliers, duplicated values etc. I could finally plot my data using matplotlib and specifically the function plt. To plot a scattergraph I used .plt.scatter ad then fed the parameters. This parameters where the Latitud values on the x axis and then the Cloudiness values on the Y-axis. Then I created the labels for the figure.
+
+Figure Analysis
+
+* The scatter plot represents the relationship bewteen the cloudiness and the Latitude for each city.
+* As shown in the figure, the further the city is from the equator the more cloudiness it will have.
+* If the cities latitude is close to the equator the less cloudiness it will have.
 
 **Wind Speed (mph) vs. Latitude**
 
 ![TemperatureVSWindSpeed](WeatherPy/output_data/Latitude_vs_Wind_speed.png)
 
 
+Latitude vs. Wind Speed Plot
+
+Explanation of the code used for this section:
+
+* Once the Data Frame is clean from potential outliers, duplicated values etc. I could finally plot my data using matplotlib and specifically the function plt. To plot a scattergraph I used .plt.scatter ad then fed the parameters. This parameters where the Latitud values on the x axis and then Wind speed on the Y-axis. Then I created the labels for the figure.
+
+Figure Analysis
+
+* The scatter plot  represents the relationship bewteen Wind Speed (MPH) and the Latitude for each city.
+* As shown in the figure, its fair to say that the latitude dosent increase wind speeds. We can see a potential outlier of a city that is located on latitude -60 and was wind speed over 40 MPH.
+* We can state there is no correlation bewteen the windspeed and the latitude
+
 
 **Northern Hemisphere - Temperature (F) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_NtempvsLat.png.png)
 
 
+**Linear Regression and relationships**
+
+* The regression displays a decrease with Lattitude.
+* The type of correlation is a negative correlation. As the variable Latitude increases the Temperature value decreases as well.
+* As you move north from the equator the temperature decreases.
+* This type of correlation can be considered a correlation coefficient = aprox - 1.0 stating that there is a strong almost perfect negative relationship between latitude and temperature.
+
 **Southern Hemisphere - Temperature (F) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_StempvsLat.png.png)
+
+**Linear Regression and relationships**
+
+* The regression displays a increase with Lattitude.
+
+* As you move south from the equator the temperature increases.
+* The correlation coefficient = aprox 0.6 this means that there is a moderate positivie relationship bewteen the two variables beeing observed.
+
 
 **Northern Hemisphere - Humidity (%) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_NhumidityvsLat.png)
 
+
+Linear Regression and relationships
+
+* The regression displays a increase with Lattitude.
+* As you move south from the equator the temperature increases.
+* The correlation coefficient = aprox 0.4 this means that there is a moderate positivie relationship bewteen the two variables beeing observed.
+
+
 **Southern Hemisphere - Humidity (%) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_ShumidityvsLat.png)
+
+
+Linear Regression and relationships
+
+* The regression displays a increase in humidity with Lattitude.
+* As you move south from the equator the humidity increases.
+* The correlation coefficient = aprox 0.3 this means that there is a moderate positivie relationship bewteen the two variables beeing observed.
 
 **Northern Hemisphere - Cloudiness (%) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_NcloudinessvsLat.png)
 
+
+Linear Regression and relationships
+
+* The regression displays little increase in Cloudiness with Lattitude.
+* As you move north from the equator the Cloudiness slightly increases.
+* The correlation coefficient = aprox 0.5 this means that there is a moderate positivie relationship bewteen the two variables beeing observed.
+
 **Southern Hemisphere - Cloudiness (%) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_ScloudinessvsLat.png)
+
+
+Linear Regression and relationships
+
+* The regression displays  increase in Cloudiness with lattitude.
+* As you move south from the equator the Cloudiness increases.
+* The correlation coefficient = aprox 1 this means that there is a strong positivie relationship bewteen the two variables beeing observed.
 
 **Northern Hemisphere - Wind Speed (mph) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_NwindspeedvsLat.png)
 
+Linear Regression and relationships
+
+* The regression displays a slight increase in Wind Speed.
+* As you move north from the equator the Wind Speed increases a littel
+* The correlation coefficient = aprox 0.0 this means that there is no relationship bewteen the two variables beeing observed. So, the latitude in this case does not affect the wind speed in citys.
+
 **Southern Hemisphere - Wind Speed (mph) vs. Latitude**![NH&SH](WeatherPy/output_data/Regression_SwindspeedvsLat.png)
+
+
+Linear Regression and relationships
+
+* The regression displays an decrease in Wind Speed.
+* As you move north from the equator the Wind Speed decreases.
+* The correlation coefficient = aprox 0.1 this means that there is no relationship bewteen the two variables beeing observed. But compared to the Northern hemisphere there is a stronger prescense in the negative relationship bewteen variables potential leading the researcher to belivethat for the Southern hemisphere latitude can have a negative relationship with the wind speed in citys. Although, its important to note that the correlation is still considered close to 0 stating that there is no relationship. or that a relationhip bewteen this can not be stablished, with the data provided.
 
 #### VacationPy
 
 ![HeatMap](WeatherPy/Heatmap.png)
 
-Here is an image of the heatmap I created before putting the hotels on it. 
+Here is an image of the heatmap I created before putting the hotels on it.
 
 ![HeatMap](WeatherPy/Heatmap_with_hotels1.png)
 
-Here is an image of the heatmap I created with the hotels. The image size is small but you can get a sense of the final product. 
-
+Here is an image of the heatmap I created with the hotels. The image size is small but you can get a sense of the final product.
 
 ## References
-
-
 
 Frost, J. (2018, April 3). Interpreting Correlation Coefficients. Retrieved from Statistics By Jim :
 https://statisticsbyjim.com/basics/correlations/#:~:text=As%20one%20value%20increases%2 %20there,0.6%3A%20A%20moderate%20negative%20relationship.
@@ -129,7 +234,6 @@ Mr.T. (2018, June 5). Matplotlib - Border around scatter plot points. Retrieved 
 **Please note: I am new to .md files and I cant seem to indent the reference following the APA guidelines**
 
 ## Assignment instructions provided by Northwestern Data Science Bootcamp
-
 
 ### Python API Homework - What's the Weather Like?
 
